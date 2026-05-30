@@ -5,11 +5,9 @@
 ### Open Source Intelligence & Reconnaissance Integrated System
 
 [![Live Demo](https://img.shields.io/badge/osirisai.live-00E5FF?style=for-the-badge&logo=vercel&logoColor=white)](https://osirislive.app)
-[![Support OSIRIS](https://img.shields.io/badge/Support_Project-Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/posts/159077425)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![MapLibre](https://img.shields.io/badge/MapLibre_GL-GPU_Rendered-396CB2?style=for-the-badge)](https://maplibre.org)
-[![License](https://img.shields.io/badge/License-MIT-D4AF37?style=for-the-badge)](LICENSE)
 
 **A real-time global intelligence dashboard that aggregates live flight tracking, CCTV networks, earthquake monitoring, conflict zone mapping, and 24/7 news feeds into a single GPU-accelerated interface.**
 
@@ -131,8 +129,6 @@ Osiris is a production-grade OSINT platform that provides situational awareness 
 ## Quick Start
 
 ```bash
-git clone https://github.com/simplifaisoul/osiris.git
-cd osiris
 npm install
 npm run dev
 ```
@@ -142,8 +138,6 @@ Open [http://localhost:3000](http://localhost:3000)
 ### Docker / Self-Hosting
 
 ```bash
-git clone https://github.com/simplifaisoul/osiris.git
-cd osiris
 cp .env.template .env     # optional — configure keys / port
 docker compose up -d
 ```
@@ -153,13 +147,6 @@ Open [http://localhost:3000](http://localhost:3000). The image is a multi-stage
 carries CasaOS app metadata (`x-casaos:`) for one-click install on
 [CasaOS](https://casaos.io). See **[DOCKER.md](DOCKER.md)** for the full Docker,
 CasaOS and API-key guide.
-
-**Prebuilt image (GHCR)** — skip the build and pull it directly:
-
-```bash
-docker pull ghcr.io/aiacos/osiris:latest
-docker run -d -p 3000:3000 --env-file .env ghcr.io/aiacos/osiris:latest
-```
 
 **Custom port** — the container always listens on `3000`; set `OSIRIS_PORT` in
 `.env` to change the published host port (e.g. `OSIRIS_PORT=3005`) without
@@ -219,19 +206,11 @@ AIS_API_KEY=                 # aisstream.io maritime
 
 ---
 
-## License
 
-MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
-
-**🛠️ SUPPORT THE OSIRIS PROJECT**
-The OSIRIS Global Intelligence Grid is entirely open-source, but running the backend scanners and data firehoses isn't cheap.
-
-If you want to help keep the servers alive, and support us to get access to better tools  unlock the **Special OSIRIS Console**, Currently Just a Cool UI. a you can officially support the project here : 
-
 
 
 </div>
